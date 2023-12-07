@@ -1,6 +1,13 @@
+@import '../../styles/settings.scss';
 .columnForm{
-  margin: 0 auto;
+  margin: $base-size auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  input{
+    margin: 0 $base-size;
+  }
+  button{
+    margin: 0 $base-size;
+  }
 }
