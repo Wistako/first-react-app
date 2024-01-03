@@ -5,6 +5,8 @@ import Home from './pages/Home.js';
 import About from './pages/About.js';
 import Favorite from './pages/Favorite.js';
 import NoMatch from './pages/NoMatch.js';
+// COMPONENTS
+import List from './components/List/List.js';
 // REACT
 import {Routes, Route} from 'react-router-dom';
 
@@ -17,6 +19,8 @@ function App() {
          <Route path="/" element={<Home />} />
          <Route path="/about" element={<About />} />
          <Route path="/favorite" element={<Favorite />} />
+         <Route path='/lists' element={<List />} />
+         <Route path='/lists/:listId' element={<List />} />
          <Route path='*' element={<NoMatch />} />
         </Routes>
       </Container>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Button from '../Button/Button.js';
 import TextInput from '../TextInput/TextInput.js';
 import styles from './SearchForm.module.scss';
@@ -8,6 +8,11 @@ import { updateFilter } from '../../redux/store.js';
 const SearchForm = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
+  
+  useEffect(() => {
+    dispatch(updateFilter(title));
+  }, [title, dispatch]);
+
   const handleSubmit = e => {
     e.preventDefault();
     dispatch(updateFilter(title));
