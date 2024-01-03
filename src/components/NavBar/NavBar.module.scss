@@ -27,5 +27,8 @@
     &:hover{
       color: $color-success;
     }
+    &.linkActive{
+      color: $color-warning;
+    }
   }
 }
