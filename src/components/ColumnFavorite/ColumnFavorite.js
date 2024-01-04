@@ -1,4 +1,4 @@
-import { getFavoriteCards } from '../../redux/store';
+import { getFavoriteCards } from '../../redux/cardsRedux';
 import { useSelector } from 'react-redux';
 import styles from './ColumnFavorite.module.scss';
 import Card from '../Card/Card';

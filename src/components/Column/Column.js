@@ -3,7 +3,7 @@ import 'font-awesome/css/font-awesome.min.css'
 import Card from '../Card/Card.js';
 import CardForm from '../CardForm/CardForm.js';
 import { useSelector } from 'react-redux';
-import { getFilteredCards } from '../../redux/store';
+import { getFilteredCards } from '../../redux/cardsRedux.js';
 
 const Column = props =>{
   const cards = useSelector(state => getFilteredCards(state, props.id));
